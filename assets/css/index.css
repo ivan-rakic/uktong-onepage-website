@@ -1,0 +1,1610 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700');
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* HEADER -------------------------------------------------*/
+
+header {
+    min-height: 55px;
+    background: rgb(6,109,171);
+    background: -moz-linear-gradient(top, rgba(6,109,171,1) 0%, rgba(27,118,170,1) 60%, rgba(138,187,215,1) 100%, rgba(197,222,234,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(6,109,171,1) 0%,rgba(27,118,170,1) 60%,rgba(138,187,215,1) 100%,rgba(197,222,234,1) 100%);
+    background: linear-gradient(to bottom, rgba(6,109,171,1) 0%,rgba(27,118,170,1) 60%,rgba(138,187,215,1) 100%,rgba(197,222,234,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#066dab', endColorstr='#c5deea',GradientType=0 );
+    padding: 0;
+    position: relative;
+    z-index: 100;
+}
+
+    header h1 {
+        text-align: left;
+    }
+
+    header #aHome img {
+        margin-top: 13px;
+        position: absolute;
+        cursor: pointer;
+        transition: 0.5s ease-in;
+    }
+
+    header #menu-btn {
+        display: none;
+    }
+
+        header #menu-btn img {
+            height: 50px;
+            padding: 7px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+
+.menu-list {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+    .menu-list li {
+        display: inline-block;
+        padding: 5px 0px;
+    }
+
+        .menu-list li a {
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+        }
+
+            .menu-list li a:hover {
+                color: silver;
+            }
+
+    .menu-list .li-blog {
+        background-color: white;
+        border-radius: 5px;
+    }
+
+        .menu-list .li-blog:hover {
+            background-color: silver;
+        }
+
+        .menu-list .li-blog a {
+            color: #63499D;
+            text-decoration: none;
+        }
+
+            .menu-list .li-blog a:hover {
+                color: #63499D;
+            }
+
+
+/* HEADER Background --------------------------------------------*/
+.header-intro {
+    background-image: url("../images/baner-bg.png"); /* fallback */
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 700px;
+    transition: all 0.5s ease-in;
+}
+
+
+.info-holder {
+    padding-top: 12%;
+    transition: 0.5s ease-in;
+}
+
+
+.info-titles-l {
+    float: left;
+    padding-top: 5%;
+    width: 50%;
+    transition: 0.5s ease-in;
+}
+
+.info-mobile-r {
+    float: right;
+    width: 50%;
+    transition: 0.5s ease-in;
+}
+
+.info-titles-l a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.info-titles-l h2 {
+    font-size: 7rem;
+    color: white;
+    font-weight: bold;
+}
+
+.info-titles-l p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+    .info-titles-l p:last-child {
+        color: white;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+
+#btnAppStore img {
+    margin-top: 40px;
+    background: rgb(242,245,246);
+    background: -moz-linear-gradient(top, rgba(242,245,246,1) 0%, rgba(200,215,220,1) 52%, rgba(227,234,237,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(200,215,220,1) 52%,rgba(227,234,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,245,246,1) 0%,rgba(200,215,220,1) 52%,rgba(227,234,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#e3eaed',GradientType=0 );
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+    #btnAppStore img:hover {
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid red;
+        cursor: pointer;
+    }
+
+#btnPlayStore img {
+    margin-top: 40px;
+    background: rgb(99,73,157);
+    background: -moz-linear-gradient(top, rgba(99,73,157,1) 0%, rgba(81,50,153,1) 40%, rgba(82,52,153,1) 65%, rgba(99,73,157,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(99,73,157,1) 0%,rgba(81,50,153,1) 40%,rgba(82,52,153,1) 65%,rgba(99,73,157,1) 100%);
+    background: linear-gradient(to bottom, rgba(99,73,157,1) 0%,rgba(81,50,153,1) 40%,rgba(82,52,153,1) 65%,rgba(99,73,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63499d', endColorstr='#63499d',GradientType=0 );
+    border: 2px solid #63499D;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+    #btnPlayStore img:hover {
+        border-radius: 5px;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+
+/* APPLICATION INFO --------------------------------------------*/
+
+.app-info {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url("../images/blue-watermark.svg"); /* fallback */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 10;
+}
+
+    .app-info h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #30415d;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .app-info h4 {
+        font-size: 1rem;
+        margin-bottom: 50px;
+        color: black;
+        text-align: center;
+    }
+
+
+.app-features-list {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.table-list {
+    margin: 0 auto;
+    display: table;
+}
+
+.table-list-liner {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 2px;
+    background-color: silver;
+    width: 100%;
+    z-index: -10;
+}
+
+.app-features-list ul {
+    list-style: none;
+}
+
+    .app-features-list ul li {
+        text-align: center;
+        cursor: pointer;
+        margin: 0 10px;
+        float: left;
+        margin-bottom: 20px;
+        width: 112px;
+        box-sizing: border-box;
+    }
+
+        .app-features-list ul li:hover h3 {
+            color: black;
+        }
+
+        .app-features-list ul li img {
+            margin: 0 auto;
+            background-color: white;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px gray;
+            transition: background-color 0.5s ease;
+        }
+
+
+        .app-features-list ul li h3 {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .app-features-list ul li p {
+            font-size: 1rem;
+            display: none;
+            color: black;
+        }
+
+
+    .app-features-list ul .li-profile img {
+        background-color: #D358F7;
+    }
+
+    .app-features-list ul .li-jobs img {
+        background-color: #04B4AE;
+    }
+
+    .app-features-list ul .li-education img {
+        background-color: #F7D358;
+    }
+
+    .app-features-list ul .li-events img {
+        background-color: #FE642E;
+    }
+
+    .app-features-list ul .li-travel img {
+        background-color: teal;
+    }
+
+    .app-features-list ul .li-favourites img {
+        background-color: #86B404;
+    }
+
+
+.app-info-left {
+    margin-top: 2%;
+    float: left;
+    width: 50%;
+}
+
+    .app-info-left img {
+        transition: all 1s ease-in-out 0s;
+        -moz-transition: all 1s ease-in-out 0s;
+        -webkit-transition: all 1s ease-in-out 0s;
+        -o-transition: all 1s ease-in-out 0s;
+    }
+
+    .app-info-left:hover img {
+        transform: scale(1.1) rotateZ(-5deg);
+        -moz-transform: scale(1.1) rotateZ(-5deg);
+        -webkit-transform: scale(1.1) rotateZ(-5deg);
+        -o-transform: scale(1.1) rotateZ(-5deg);
+    }
+
+
+.app-info-right {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+
+    /*a ovo sve idpos sto ima ovo slide i slide u imenu je taj div sto se rotira*/
+
+    .app-info-right .slider {
+        width: 100%;
+        height: 430px;
+        overflow: hidden;
+    }
+
+    .app-info-right .slides {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .app-info-right .slide {
+        position: absolute;
+        list-style-type: none;
+        text-align: left;
+        width: 100%;
+        height: 430px;
+        top: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+        .app-info-right .slide h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+    .app-info-right p {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }
+
+.slide1 h3 {
+    color: rgba(91,48,88,1);
+}
+
+.slide2 h3 {
+    color: #09a19c;
+}
+
+.slide3 h3 {
+    color: #e4bc36;
+}
+
+.slide4 h3 {
+    color: #f6361b;
+}
+
+.slide5 h3 {
+    color: teal;
+}
+
+.slide6 h3 {
+    color: #7da50b;
+}
+
+
+
+
+/* VIDEO PLAYER SECTIOn --------------------------------------------*/
+.video-player-sec {
+    height: 600px;
+    background-image: url("../images/video-back.png"); /* fallback */
+    background-image: linear-gradient(to bottom, rgba(48,65,93,0.9) 0%,rgba(58,106,145,0.9) 54%,rgba(142,174,219,0.9) 100%), url("../images/video-back.png"); /* W3C */
+    background-size: contain;
+    background-position: center center;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+    .video-player-sec h3 {
+        display: block;
+        color: white;
+        font-size: 3rem;
+        padding-top: 180px;
+    }
+
+    .video-player-sec a img {
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+        .video-player-sec a img:hover {
+            background-color: blue;
+            border-radius: 50%;
+            cursor: pointer;
+            -webkit-transition: background-color 2s ease-out;
+            -moz-transition: background-color 2s ease-out;
+            -o-transition: background-color 2s ease-out;
+            transition: background-color 2s ease-out;
+        }
+
+#videoplayerDIV {
+    top: 0;
+    position: absolute;
+    max-width: 1100px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/* UK UNIVERSITIES SECTION --------------------------------------------*/
+.uk-universities-sec {
+    padding: 100px 0 100px 0;
+}
+
+.uk-universities-header h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #492649;
+}
+
+.uk-universities-header h4 {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
+.uk-uni-sections {
+    box-shadow: 0px 0px 3px silver;
+}
+
+    .uk-uni-sections div {
+        text-align: center;
+        width: 33.3334%;
+        float: left;
+        min-height: 500px;
+        padding: 30px 9%;
+        transition: background-color 0.5s ease;
+        color: black;
+    }
+
+        .uk-uni-sections div img {
+            width: 120px;
+            margin-top: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        .uk-uni-sections div h3 {
+            font-size: 1.9rem;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .uk-uni-sections div p {
+            font-size: 1.1rem;
+            line-height: 150%;
+        }
+
+        .uk-uni-sections div:hover h3 {
+            color: white;
+        }
+
+        .uk-uni-sections div:hover p {
+            color: white;
+        }
+
+        .uk-uni-sections div:hover img {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+
+.div-search {
+    background-image: url("../images/icons/university/search-back.png"); /* fallback */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    .div-search:hover {
+        background-color: #1a4e80;
+    }
+
+.div-app {
+    background-image: url("../images/icons/university/app-back.png"); /* fallback */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    .div-app:hover {
+        background-color: #139742;
+    }
+
+.div-tech {
+    background-image: url("../images/icons/university/tech-back.png"); /* fallback */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    .div-tech:hover {
+        background-color: #e4bc36;
+    }
+
+
+/* STUDENTS LIFE SECTION --------------------------------------------*/
+
+.students-life-sec {
+}
+
+.students-life-header {
+}
+
+    .students-life-header h2 {
+        padding-top: 0px;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #30415D;
+    }
+
+    .students-life-header h4 {
+        padding-bottom: 70px;
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+    }
+
+.students-life-container {
+    min-height: 800px;
+}
+
+.sl-holder {
+}
+
+.s-l-holder {
+    background-image: url("../images/student-life-back.png"); /* fallback */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-l-div {
+    float: left;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+}
+
+    .s-l-div .inner-div {
+        padding: 60px 0 0 0;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .s-l-div img {
+        width: 120px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 2px silver;
+        border: 1px solid silver;
+    }
+
+    .s-l-div h3 {
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+    }
+
+    .s-l-div p {
+        font-size: 1.1rem;
+        line-height: 150%;
+    }
+
+.text-holder {
+    width: 100%;
+    min-height: 180px;
+    padding: 4%;
+    border-radius: 10px;
+}
+
+
+.sl-PE {
+    color: black;
+}
+
+    .sl-PE .text-holder {
+        color: white;
+    }
+
+    .sl-PE img {
+        background-color: whitesmoke;
+    }
+
+.sl-OB {
+}
+
+    .sl-OB .text-holder {
+        color: white;
+    }
+
+    .sl-OB img {
+        background-color: whitesmoke;
+    }
+
+.sl-EA {
+    background-repeat: no-repeat;
+}
+
+    .sl-EA .text-holder {
+        color: white;
+    }
+
+    .sl-EA img {
+        background-color: whitesmoke;
+    }
+
+
+.sl-CA {
+}
+
+    .sl-CA .text-holder {
+        color: white;
+    }
+
+    .sl-CA img {
+        background-color: whitesmoke;
+    }
+
+
+/* SCHOOL AND EXPERTIES --------------------------------------------*/
+
+.school-and-experties {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../images/blue-watermark.svg"); /* fallback */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+    .school-and-experties h3, .school-and-experties h4, .school-and-experties p {
+        color: black;
+    }
+
+.sae-top {
+    min-height: 500px;
+}
+
+.sae-top-l {
+    width: 50%;
+    min-height: 500px;
+    float: left;
+    text-align: right;
+}
+
+    .sae-top-l img {
+        height: 450px;
+        padding-right: 50px;
+        transition: all 1s ease-in-out 0s;
+        -moz-transition: all 1s ease-in-out 0s;
+        -webkit-transition: all 1s ease-in-out 0s;
+        -o-transition: all 1s ease-in-out 0s;
+    }
+
+        .sae-top-l img:hover {
+            transform: scale(1.1) rotateZ(-5deg);
+            -moz-transform: scale(1.1) rotateZ(-5deg);
+            -webkit-transform: scale(1.1) rotateZ(-5deg);
+            -o-transform: scale(1.1) rotateZ(-5deg);
+        }
+
+.sae-top-r {
+    width: 50%;
+    float: left;
+    min-height: 500px;
+    padding-left: 30px;
+}
+
+    .sae-top-r h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sae-top-r h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .sae-top-r p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        padding-right: 10%;
+    }
+
+.sae-down {
+    min-height: 500px;
+}
+
+.sae-down-l {
+    min-height: 500px;
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#94618e+0,563452+45,492548+100 */
+}
+
+    .sae-down-l h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sae-down-l h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .sae-down-l p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        padding-left: 5%;
+    }
+
+.sae-down-r {
+    width: 50%;
+    float: left;
+    min-height: 500px;
+    text-align: left;
+}
+
+    .sae-down-r img {
+        height: 450px;
+        padding-left: 50px;
+        transition: all 1s ease-in-out 0s;
+        -moz-transition: all 1s ease-in-out 0s;
+        -webkit-transition: all 1s ease-in-out 0s;
+        -o-transition: all 1s ease-in-out 0s;
+    }
+
+        .sae-down-r img:hover {
+            transform: scale(1.1) rotateZ(-5deg);
+            -moz-transform: scale(1.1) rotateZ(-5deg);
+            -webkit-transform: scale(1.1) rotateZ(-5deg);
+            -o-transform: scale(1.1) rotateZ(-5deg);
+        }
+
+
+/* CALL TO ACTION DOWNLOAD --------------------------------------------*/
+
+.call-to-action {
+    padding: 200px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: rgb(89,166,229);
+    background-image: url("../images/calltoAction-back.png"); /* fallback */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 0px 5px gray;
+    margin-bottom: 15px;
+}
+
+    .call-to-action h2 {
+        color: #492649;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+#btnAppStoreCall img {
+    margin-top: 20px;
+    margin-right: 10px;
+    background: rgb(242,245,246);
+    background: -moz-linear-gradient(top, rgba(242,245,246,1) 0%, rgba(200,215,220,1) 52%, rgba(227,234,237,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(200,215,220,1) 52%,rgba(227,234,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,245,246,1) 0%,rgba(200,215,220,1) 52%,rgba(227,234,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#e3eaed',GradientType=0 );
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+    #btnAppStoreCall img:hover {
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid red;
+        cursor: pointer;
+    }
+
+#btnPlayStoreCall img {
+    margin-top: 20px;
+    background: rgb(99,73,157);
+    background: -moz-linear-gradient(top, rgba(99,73,157,1) 0%, rgba(81,50,153,1) 40%, rgba(82,52,153,1) 65%, rgba(99,73,157,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(99,73,157,1) 0%,rgba(81,50,153,1) 40%,rgba(82,52,153,1) 65%,rgba(99,73,157,1) 100%);
+    background: linear-gradient(to bottom, rgba(99,73,157,1) 0%,rgba(81,50,153,1) 40%,rgba(82,52,153,1) 65%,rgba(99,73,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63499d', endColorstr='#63499d',GradientType=0 );
+    border: 2px solid #63499D;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+    #btnPlayStoreCall img:hover {
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+
+.call-to-action a {
+    text-decoration: none;
+}
+
+.call-to-action p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgb(48,65,93);
+}
+
+/* FOOTER --------------------------------------------*/
+
+.footer-up {
+    background-color: white;
+    color: black;
+    padding: 100px 0;
+}
+
+
+.footer-up-header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+    .footer-up-header h3 {
+        font-size: 2rem;
+        color: rgb(48,65,93);
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .footer-up-header span {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+.footer-up-sections {
+    padding: 50px 10px;
+}
+
+    .footer-up-sections div {
+        float: left;
+        width: 25%;
+    }
+
+
+    .footer-up-sections .footer-up-contact {
+        float: left;
+        width: 50%;
+    }
+
+.footer-up-info {
+    text-align: right;
+    padding-right: 20px;
+}
+
+    .footer-up-info p {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+        .footer-up-info p:first-child {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+    .footer-up-info .info-social {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        .footer-up-info .info-social ul li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+.round-a {
+    text-decoration: none;
+}
+
+    .round-a img {
+        width: 35px;
+        border-radius: 50%;
+        background-color: #539ADA;
+    }
+
+        .round-a img:hover {
+            background-color: #3778b2;
+        }
+
+.footer-up-link {
+    text-align: left;
+    padding-left: 20px;
+}
+
+    .footer-up-link p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-up-link li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+        .footer-up-link li a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+            .footer-up-link li a:hover {
+                color: Blue;
+                cursor: pointer;
+            }
+
+.footer-up-contact {
+}
+
+    .footer-up-contact p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-up-contact input {
+        display: block;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 8px;
+        background-color: white;
+        border: 1px solid silver;
+    }
+
+    .footer-up-contact textarea {
+        display: block;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: white;
+        border: 1px solid silver;
+        resize: vertical;
+        min-height: 120px;
+        max-height: 200px;
+    }
+
+#btnSubmit:hover {
+    background-color: silver;
+}
+
+.footer-down {
+    background: rgb(197,222,234);
+    background: -moz-linear-gradient(top, rgba(197,222,234,1) 0%, rgba(138,187,215,1) 0%, rgba(27,118,170,1) 40%, rgba(6,109,171,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 0%,rgba(27,118,170,1) 40%,rgba(6,109,171,1) 100%);
+    background: linear-gradient(to bottom, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 0%,rgba(27,118,170,1) 40%,rgba(6,109,171,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 );
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+    .footer-down ul {
+        list-style: none;
+    }
+
+        .footer-down ul li {
+            display: inline-block;
+        }
+
+        .footer-down ul li {
+            display: inline-block;
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+            .footer-down ul li a {
+                font-size: 1rem;
+                color: white;
+                text-decoration: none;
+            }
+
+                .footer-down ul li a:hover {
+                    color: steelblue;
+                    cursor: pointer;
+                }
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+@media screen and (max-width: 1260px) {
+
+    .sae-top-r {
+        padding-left: 20px;
+    }
+
+        .sae-top-r h3 {
+            margin-top: 30px;
+        }
+
+        .sae-top-r p {
+            padding-right: 20px;
+            font-size: 1rem;
+        }
+
+    .sae-down-l {
+        padding-right: 20px;
+    }
+
+        .sae-down-l h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .sae-down-l p {
+            padding-left: 20px;
+            font-size: 1rem;
+        }
+}
+
+
+
+
+@media screen and (max-width: 1020px) {
+
+    .header-intro {
+        background-position: right center;
+        min-height: 600px;
+    }
+
+    .info-holder {
+        padding-top: 10%;
+    }
+
+
+    .info-titles-l {
+        padding-left: 10px;
+    }
+
+    .app-info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+
+    .video-player-sec {
+        height: 400px;
+        background-position: top left;
+    }
+
+        .video-player-sec h3 {
+            padding-top: 130px;
+        }
+
+    .uk-universities-sec {
+        padding: 80px 0 80px 0;
+    }
+
+    .uk-uni-sections {
+    }
+
+        .uk-uni-sections div {
+            width: 100%;
+            float: none;
+            min-height: 250px;
+            padding: 20px 9%;
+            border-bottom: 1px solid silver;
+        }
+
+            .uk-uni-sections div:first-child {
+                border-top: 1px solid silver;
+            }
+
+            .uk-uni-sections div img {
+                margin-top: 10px;
+                border-radius: 50%;
+            }
+
+            .uk-uni-sections div h3 {
+                font-size: 1.5rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .uk-uni-sections div p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+}
+
+
+@media screen and (max-width: 955px) {
+
+    .call-to-action {
+        margin-top: 50px;
+        padding: 100px 0;
+    }
+
+        .call-to-action h2 {
+            font-size: 2rem;
+        }
+
+    .sae-top-l {
+        width: 30%;
+    }
+
+    .sae-top-r {
+        width: 70%;
+    }
+
+
+    .sae-top-l img {
+        height: initial;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .sae-down-l {
+        width: 70%;
+    }
+
+    .sae-down-r {
+        width: 30%;
+    }
+
+        .sae-down-r img {
+            height: initial;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+    .app-info-left {
+        width: 40%;
+    }
+
+    .app-info-right {
+        width: 60%;
+    }
+
+    .s-l-div {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-intro {
+        background-position: center center;
+        min-height: 500px;
+    }
+
+
+    .info-titles-l a {
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+    .info-titles-l h2 {
+        font-size: 4rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .info-titles-l p {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+        .info-titles-l p:last-child {
+            margin-left: 20%;
+        }
+
+
+    #btnAppStore img {
+        width: 40%;
+    }
+
+    #btnPlayStore img {
+        width: 40%;
+    }
+
+
+    header h1 {
+        text-align: left;
+    }
+
+    header #aHome img {
+        margin-top: 3px;
+        margin-left: 10px;
+        position: fixed;
+        cursor: pointer;
+        width: 60px;
+    }
+
+    .menu-list {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 90px;
+    }
+
+        .menu-list li {
+            padding: 6px 0px;
+        }
+
+            .menu-list li a {
+                font-size: 1.1rem;
+            }
+
+    .app-info-left {
+        display: none;
+    }
+
+    .app-info-right {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .app-info-right #slider {
+            width: 95%;
+            height: 600px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+    .table-list-liner {
+        display: none;
+    }
+
+    .app-features-list ul li {
+        text-align: center;
+        cursor: pointer;
+        margin: 0px;
+        float: left;
+        margin-bottom: 10px;
+        width: 112px;
+        box-sizing: border-box;
+    }
+
+    .video-player-sec {
+        height: 400px;
+        background-position: top left;
+    }
+
+        .video-player-sec h3 {
+            padding-top: 70px;
+        }
+
+    .school-and-experties {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+
+@media screen and (max-width: 685px) {
+
+    header #menu-btn {
+        display: block;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+        .menu-list li {
+            display: block;
+            padding: 5px 0px;
+            margin: 5px 0;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 5px;
+            margin-right: 65px;
+        }
+
+
+        .menu-list .li-blog {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+            .menu-list .li-blog a {
+                font-size: 1rem;
+                color: #63499D;
+            }
+
+                .menu-list .li-blog a:hover {
+                    color: #63499D;
+                }
+
+
+    .info-titles-l {
+        width: 100%;
+        float: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .info-mobile-r {
+        width: 100%;
+        float: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #btnAppStore img {
+        width: 30%;
+    }
+
+    #btnPlayStore img {
+        width: 30%;
+    }
+
+    .info-mobile-r img {
+        max-height: 300px;
+    }
+
+    .info-titles-l p:last-child {
+        margin-left: 0px;
+    }
+
+    .app-features-list ul li {
+        float: left;
+        width: 33.3334%;
+    }
+
+    .footer-up {
+        padding: 50px 0;
+    }
+
+    .footer-up-sections {
+        padding: 20px 10px;
+    }
+
+        .footer-up-sections div {
+            float: left;
+            width: 50%;
+        }
+
+
+            .footer-up-sections div:last-child {
+                float: none;
+                width: 100%;
+            }
+
+
+    .sae-top-l {
+        width: 100%;
+        float: none;
+        min-height: 150px;
+        text-align: center;
+    }
+
+        .sae-top-l img {
+            height: 150px;
+        }
+
+    .sae-top-r {
+        width: 100%;
+        float: none;
+        min-height: 300px;
+    }
+
+    .sae-down-l {
+        min-height: 300px;
+        width: 100%;
+        float: none;
+    }
+
+    .sae-down-r {
+        min-height: 150px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+        .sae-down-r img {
+            height: 150px;
+        }
+
+    .app-info-left {
+        width: 100%;
+        float: none;
+    }
+
+    .app-info-right {
+        width: 100%;
+        float: none;
+    }
+
+    .app-info-left ul li {
+        text-align: center;
+        height: auto;
+        padding-right: 0px;
+    }
+
+    .app-info-right ul li {
+        text-align: center;
+        height: auto;
+        padding-left: 0px;
+    }
+
+
+        .app-info-right ul li div:first-child {
+            float: none;
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            text-align: center;
+        }
+
+        .app-info-right ul li div:last-child {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+
+    .app-info-right .slide h3 {
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .app-info-right p:last-child {
+        text-align: justify;
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+
+    header #menu-btn {
+        margin-left: 15px;
+    }
+
+    .header-intro {
+        background-position: right center;
+        min-height: 400px;
+    }
+
+    #btnAppStore img {
+        width: 27%;
+    }
+
+
+    #btnPlayStore img {
+        width: 27%;
+    }
+
+
+    .info-holder {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 0;
+    }
+
+    .info-titles {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-social {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    .app-info {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+        .app-info h4 {
+            margin-bottom: 5px;
+        }
+
+    .app-info-left ul li h3 {
+        font-size: 1.2rem;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+
+    .app-info-left ul li img {
+        width: 10%;
+    }
+
+
+    .app-info-right ul li h3 {
+        font-size: 1.2rem;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+
+    .app-info-right ul li img {
+        width: 10%;
+    }
+
+    .app-info-right ul li div:last-child {
+        padding-left: 0;
+    }
+
+    .video-player-sec h3 {
+        padding-top: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 2.5rem;
+    }
+
+    .uk-universities-sec {
+        padding: 40px 0 40px 0;
+    }
+
+
+    .uk-universities-header h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .uk-universities-header h4 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+    }
+
+    .students-life-header h4 {
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .students-life-sec {
+        margin-bottom: 50px;
+    }
+
+    .school-and-experties {
+        margin-top: 0px;
+    }
+
+    .call-to-action {
+        margin-top: 0px;
+        padding: 70px 15px;
+    }
+
+    .sl-CA {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu-list li a {
+        padding: 5px 10px;
+    }
+}

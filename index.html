@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+    <title>UKtong</title>
+    <meta name="author" content="Web eZon" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Don't forget to set your site up: http://google.com/webmasters -->
+    <meta name="google-site-verification" content="OjRJPHyvQ90BHUNkRoXxhp0uhh1W1wxd8HdGfQnidxI" />
+    <!-- Who owns the content of this site? -->
+    <meta name="Copyright" content="UKTong" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- concatenate and minify for production -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <!-- JSSOR SLIDER -->
+    <script src="assets/js/Jssor/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/Jssor/jssor.slider-24.0.0.mini.js"></script>
+    <link href="assets/js/Jssor/slider.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <h1>
+                <a id="aHome"> <img src="assets/images/logo2.svg" alt="UKtong Logo" /> </a>
+            </h1>
+            <a id="menu-btn"> <img src="assets/images/icons/menu-icon.svg" alt="UKtong Menu" /> </a>
+            <ul class="menu-list">
+                <li><a id="aAppF">App Features</a></li>
+                <li><a id="aVideo">Video</a></li>
+                <li><a id="aUkUni">UK Universities</a></li>
+                <li><a id="aGuides">Guides</a></li>
+                <li><a id="acontact">Contact</a></li>
+                <li class="li-blog"><a href="http://blog.uktong.org.uk" target="_blank">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- HEADER INTRO SECTION ------------------------------------------------------>
+    <section class="header-intro">
+        <div class="container clearfix">
+            <div class="info-holder">
+                <div class="info-titles-l">
+                    <h2>UKtong</h2>
+                    <p>
+                        the new way to connect to the future
+                    </p>
+                    <a id="btnAppStore" title="Coming Soon!">
+                        <img src="assets/images/icons/app-store.svg" alt="Coming Soon!" />
+                    </a>
+                    <a id="btnPlayStore" href="https://play.google.com/store/apps/details?id=uk.org.uktong&hl=en" target="_blank" title="Coming Soon!">
+                        <img src="assets/images/icons/play-store.svg" alt="Download Here!" />
+                    </a>
+                    <p>Avaliable now on <strong>Play Store!</strong></p>
+                </div>
+            </div>
+            <div class="info-mobile-r">
+                <img src="assets/images/mobile-intro.png" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MOBILE APP INFO SECTION ------------------------------------------------------>
+    <div class="container">
+        <section class="app-info clearfix">
+            <h2>Application Features</h2>
+            <h4><i>~ Make student life easier with the UKtong mobile application ~</i></h4>
+            <div class="app-features-list table-list clearfix">
+                <div class="table-list">
+                    <!--ovo je gornja lista-->
+                    <ul>
+                        <li id="li-profileID" class="li-profile" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Profile</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/profile-ico.svg" />
+                            </div>
+                        </li>
+                        <li id="li-jobsID" class="li-jobs" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Jobs</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/jobs-ico.svg" />
+                            </div>
+                        </li>
+                        <li id="li-educationID" class="li-education" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Education</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/education-ico.svg" />
+                            </div>
+                        </li>
+                        <li id="li-eventsID" class="li-events" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Events</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/events-ico.svg" alt="" />
+                            </div>
+                        </li>
+                        <li id="li-travelID" class="li-travel" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Travel Guide</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/travel-ico.svg" alt="" />
+                            </div>
+                        </li>
+                        <li id="li-favoritesID" class="li-favourites" onclick="ChangeTab(this);">
+                            <div>
+                                <h3>Favourites</h3>
+                            </div>
+                            <div>
+                                <img src="assets/images/appInfo%20icons/fav-ico.svg" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="table-list-liner">
+                    </div>
+                </div>
+            </div>
+            <div class="app-info-left">
+                <img src="assets/images/mobile-preview.png" />
+            </div>
+
+
+            <div class="app-info-right">
+                <p>Take a short tour inside of our future platform!</p>
+
+
+                <div id="jssor_1" class="slider" style="position:relative;margin:0 auto;top:0px;left:0px;width:530px;height:420px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('assets/js/Jssor/loading.gif') no-repeat 50% 50%;"></div>
+                    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 530px; height: 420px; overflow: hidden; ">
+
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>Mange your Profile</h3>
+                                <p>
+                                    Personalize your settings and preferences, and you shall be ready for start!
+                                </p>
+                            </div>
+                            <img data-u="thumb" src="assets/images/experties.png" />
+                        </div>
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>Find and apply for Jobs</h3>
+                                <p>
+                                    Find out everything about UK employment!
+                                    UK Tong is the perfect place if you’re looking for <strong>part time jobs</strong> for students.
+                                    Best part time jobs are listed on our website and in our app. With us, you can find high paying part time jobs, jobs for undergraduates, jobs for international students, uni and college <strong>student jobs</strong> and smashing graduate schemes.
+                                    Browse exellent training programmes and <strong>internships in UK</strong>. Don’t miss out on great job opportunities. Let us help you find the best job vacancies in United Kingdom.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>Browse universities, boarding schools and prep schools in United Kingdom.</h3>
+                                <p>
+                                    Find all information about education in the UK.
+                                    Best colleges, top <strong>boarding schools</strong> and top universities are all listed on our website and in the UK Tong mobile app.
+                                    Find the perfect universitie for you. Go through a list of <strong>british universities</strong> and find out all you need to know about <strong>studying in the United Kingdom</strong>. We can help you find all the info on best residential schools, universities applications, independent boarding schools, private schools and everything you need to know about UK education.
+                                    With UK Tong you will be prepared to choose te perfect university for you or an exellent prep school for your children.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>You wanna know where’s the party? Let’s plan together!</h3>
+                                <p>
+                                    If you’re in search of a weekend getaway or looking for a nice pub near you where you can chill with your friends, you’ve come to the right place.
+                                    We work with some of the most experienced students when it comes to <strong>partying in the UK</strong> and we’ve asked them to help you find the best bars, pubs and clubs near you.
+                                    You can find venues near you and your campus and accommodation. Browse <strong>local pubs</strong>, lounges near you and briliant bars with live music. Find music festivals with your favourite bands and artists. Enjoy the summer on some of the best festivals in the UK and never miss out on nightlife and entertainment news. Discover upcoming festivals and events near you and your university. Take a look at some of our favorite events across the UK!
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>Browse top holiday destinations and smashing vacation spots.</h3>
+                                <p>
+                                    If you’re looking for amazing places to spend your holiday you at the right place!
+                                    <strong>Popular vacation spots</strong>, road trips and beautiful locations – all listed on UK Tong website and UK Tong mobile app.
+                                    Take a look at a few of our favorite locations and choose a spot for your ideal holiday.
+                                    Charming locations in Spain, Italy, Greece and other beautiful places in Europe are perfect for short breaks from your daily routine back home.
+                                    Find <strong>top destinations</strong> with great social life, bautiful bars and vivid nightlife, or remote locations for traveleres who like to discover new places.
+                                    Summer is here, make the most out of your holiday and let us guide you through your perfect vacation.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide" style="position: absolute; top: 10px; left: 10px; z-index: 0; ">
+                                <h3>Favorites</h3>
+                                <p>
+                                    Chose your favorites from all the categories, and further personalize the application to be more suitable for your needs!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <!-- VIDEO PLAYER SECTION ------------------------------------------------------>
+    <section class="video-player-sec">
+        <div class="container">
+            <h3>Find out what’s all the hype about!</h3>
+            <a id="btnPlayVideo">
+                <img src="assets/images/icons/video-play-w.png" alt="UKtong Video" />
+            </a>
+            <div id="videoplayerDIV">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ubmtvUccd5I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- UK UNIVERSITIES SECTION ------------------------------------------------------>
+    <section class="uk-universities-sec">
+        <div class="uk-universities-header">
+            <h2>UK Universities</h2>
+            <h4>~ Perfect your application with our bespoke UK University services  ~</h4>
+        </div>
+        <div class="uk-uni-sections clearfix">
+            <div class="div-search">
+                <img src="assets/images/icons/university/university-ico.svg" alt="" />
+                <h3>University Search</h3>
+                <p>
+                    Our advanced search tool allows you to search through every UK Educational institution, and filter by name, type of institution and location.
+                </p>
+            </div>
+            <div class="div-app">
+                <img src="assets/images/appInfo%20icons/fav-ico.svg" alt="" />
+                <h3>Careers</h3>
+                <p>
+                    Looking for a part-time or full-time student job? Want some internship experience whilst studying? Here you can find out all you need to know about student careers.
+                </p>
+            </div>
+            <div class="div-tech">
+                <img src="assets/images/icons/university/tech-ico.svg" alt="" />
+                <h3>Socialize</h3>
+                <p>
+                    Find bars, pubs, and clubs near you and your campus! Get out of your comfort zone and be anybody that you want to be! Have fun!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- STUDENTS LIFE ------------------------------------------------------>
+    <section class="students-life-sec">
+        <div class="students-life-container clearfix">
+            <div class="sl-holder clearfix">
+                <div class="students-life-header">
+                    <h2>Student Life</h2>
+                    <h4>~ Maximise your downtime, minimise your costs ~</h4>
+                </div>
+                <div class="s-l-holder clearfix">
+                    <div class="s-l-div sl-PE">
+                        <div class="inner-div">
+                            <img src="assets/images/appInfo%20icons/events-ico.svg" alt="" />
+                            <div class="text-holder">
+                                <h3>Events</h3>
+                                <p>
+                                    All the latest student events right here! Find parties, festivals, sports matches, group meet-ups and much more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-l-div sl-OB">
+                        <div class="inner-div">
+                            <img src="assets/images/icons/studentsLife/budget-ico.svg" alt="" />
+                            <div class="text-holder">
+                                <h3>On a budget</h3>
+                                <p>
+                                    Discounts, coupons, special deals, don’t let your budget limit your lifestyle!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-l-div sl-EA">
+                        <div class="inner-div">
+                            <img src="assets/images/icons/studentsLife/eating-ico.svg" alt="" />
+                            <div class="text-holder">
+                                <h3>Venue</h3>
+                                <p>
+                                    Artisan cafes, pub-grub or fine dining. Whatever you want, let us help you satisfy your appetite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-l-div sl-CA">
+                        <div class="inner-div">
+                            <img src="assets/images/icons/studentsLife/blog-ico.svg" alt="" />
+                            <div class="text-holder">
+                                <h3>Blog</h3>
+                                <p>
+                                    Follow our latest blogs and participate by leaving your feedback!
+                                    Share your ideas and experience with us and let us help you with guidance from other fellow
+                                    students and users of our platform!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SCHOOL AND EXPERTIES ------------------------------------------------------>
+    <section class="school-and-experties clearfix">
+        <div class="sae-top clearfix">
+            <div class="sae-top-l">
+                <img src="assets/images/boarding.png" alt="" />
+            </div>
+            <div class="sae-top-r">
+                <h3>UK Boarding and Preparatory Schools</h3>
+                <h4>Schools Guide</h4>
+                <p>A complete guide to the UK Preparatory and Boarding School systems. Everything you need to know when considering a move to study in the UK.</p>
+                <h4>An Insider’s Guide</h4>
+                <p>Check out what it’s really like to go to boarding school in the UK. Our current students give you the low-down on each of their schools.</p>
+                <h4>Expert Advice</h4>
+                <p>Applying to study in the UK can be a daunting task. We have a team of UK based experts who can make things much easier for you.</p>
+            </div>
+        </div>
+        <div class="sae-down clearfix">
+            <div class="sae-down-l clearfix">
+                <h3>Our Experties</h3>
+                <h4>Services</h4>
+                <p>We help aspiring, inquiring and current UK students with every aspect of their studying process. From enjoying your university city to the max, to perfecting your personal statement and interview techniques, we’re here to help.</p>
+                <h4>Promise</h4>
+                <p>At UKtong we promise to do all that we can to make your UK academic career the best that it possibly can be. We are passionate, devoted and excited about everything UK study-focused and we want to help you!</p>
+                <h4>People</h4>
+                <p>Our team is comprised of current and past UK students, ensuring we provide the most relevant and up-to-date information across the board.</p>
+            </div>
+            <div class="sae-down-r">
+                <img src="assets/images/experties.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION ------------------------------------------------------>
+    <section class="call-to-action">
+        <div class="container">
+            <h2>The Time of your Life... Avaliable on Play Store!</h2>
+            <p>Download the No.1 app for overseas students in the UK via</p>
+            <div>
+                <a href="#" id="btnAppStoreCall" title="Coming Soon!">
+                    <img src="assets/images/icons/app-store.svg" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=uk.org.uktong&hl=en" id="btnPlayStoreCall" title="Download Here!">
+                    <img src="assets/images/icons/play-store.svg" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION ------------------------------------------------------>
+    <footer>
+        <div class="footer-up">
+            <div class="footer-up-header">
+                <h3>Contact Us</h3>
+                <span>~ For more info about us, give us a call, or drop us an email below. ~</span>
+            </div>
+            <div class="footer-up-sections container clearfix">
+                <div class="footer-up-info">
+                    <p>Contact Info</p>
+                    <p>email: info@uktong.co.uk</p>
+                    <p>web: <a href="https://uktong.org.uk/">www.uktong.co.uk</a></p>
+                    <div class="info-social">
+                        <ul>
+                            <li>
+                                <a class="round-a" href="https://twitter.com/UKTong1" target="_blank" title="Tweeter">
+                                    <img src="assets/images/icons/twee-icon.svg" alt="UkTong Tweeter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="round-a" href="https://www.instagram.com/uk_tong" title="Instagram">
+                                    <img src="assets/images/icons/insta-icon.svg" alt="UkTong Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="round-a" href="https://www.facebook.com/uktongapp" target="_blank" title="Facebook">
+                                    <img src="assets/images/icons/fb-icon.svg" alt="UkTong Facebook" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-up-link">
+                    <p>Site Map</p>
+                    <ul>
+                        <li><a id="aHomeS">Home</a></li>
+                        <li><a id="aAppFS">App Features</a></li>
+                        <li><a id="aVideoS">Video</a></li>
+                        <li><a id="aUkUniS">UK Universities</a></li>
+                        <li><a id="aGuidesS">Guides</a></li>
+                        <li><a id="acontactS">Contact</a></li>
+                        <li><a href="http://blog.uktong.org.uk" target="_blank" id="acBlog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-up-contact">
+                    <p>Contact Form</p>
+                    <form name="contactform" method="POST" action="">
+                        <input id="inpName" type="text" name="name" placeholder="Name and Last Name">
+                        <input id="inpEmail" type="email" name="email" placeholder="Your Email" />
+                        <textarea id="inpMessage" name="message" placeholder="Your message"></textarea>
+                        <input type="submit" value="Send" id="btnSubmit" name="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <p><small>&copy; Copyright UKTong 2017. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
+    <!-- this is where we put our custom functions -->
+    <!-- don't forget to concatenate and minify for production -->
+    <script src="assets/js/functions.js"></script>
+    <script>$(document).ready(initPage);</script>
+    <!-- Asynchronous google analytics; this is the official snippet.
+         Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+    -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-96961002-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</body>
+</html>
